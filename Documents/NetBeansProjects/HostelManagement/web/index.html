@@ -1,0 +1,126 @@
+
+
+<html>
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+<meta name ="Viewport" content="width=device-width",initial-scale=1.0>
+<style>
+body
+{
+margin:0;
+padding:0;
+background-image:url(chitkara.jpg);
+background-size:cover;
+background-position:center;
+font-family:sans-serif;
+}
+.L
+{
+	width: 320px;
+	height: 420px;
+	background: rgba(0,0,0,0.5);
+	color: white;
+	top: 50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 40px;
+
+}
+h1
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+
+}
+.L p
+{
+	margin: 0;
+	padding: 0;
+	font-weight:  bold;
+}
+.L input
+{
+width:100%;
+margin-bottom:20px;}
+
+.L input[type="text"],input[type="password"]
+{
+	border:none;
+	border-bottom: 1px solid black;
+	background: transparent;
+	outline:none;
+	height: 40px;
+	color: white;
+	font-size: 16px;
+}
+.L input[type="submit"]
+{
+	border:none;
+	outline: none;
+	height: 40px;
+	background: skyblue;
+	color: black;
+	font-size: 18px;
+	border-radius: 0px;
+
+}
+.L input[type="submit"]:hover
+{
+	cursor: pointer;
+	background: grey;
+	color: black;
+
+}
+.L a{
+	text-decoration: none;
+	font-size: 14px;
+    color: #fff;
+
+}
+.L a:hover
+{
+	color: grey;
+}
+</style>
+<script>
+function vForm() {
+  
+
+  if (document.myForm.username.value== "") {
+    alert("Please enter the valid username");
+    document.myForm.username.focus();
+    return false;
+  }
+  if(document.myForm.pass.value=="")
+  {
+  	alert("Please enter the password");
+  	document.myForm.pass.focus();
+  	return false;
+  }
+}
+  </script>
+</head>
+<body>
+	 
+	<div class="L">
+		<h1>Login Here</h1>
+                
+                <form action="Login" method="post">
+			<p>Username</p>
+			<input type="text" name="uid" placeholder="Enter Username">
+			<p>Password</p>
+			<input type="Password" name="password" placeholder="Enter Password">
+			<input type="submit" name="submit" value="Submit">
+			
+			<br>
+	
+		</form>
+
+	</div>
+</body>
+</html> 
